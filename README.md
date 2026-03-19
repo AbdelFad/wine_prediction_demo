@@ -58,3 +58,51 @@ dvc push
 - deploy
 
 
+====
+## connect to mlflow
+
+```sh
+# create connection directory:
+
+mkdir mlflow-connect
+cd mlflow-connect
+
+# install python env
+
+python3 -n venv .venv
+
+# activate python env
+
+. .venv/bin/activate
+
+# install mlflow python module
+
+python3 -m pip install mlflow
+
+# import mlflow module
+python3
+
+import mlflow
+
+# connect to mlflow
+
+mlflow.set_tracking_uri("http://localhost:7006")
+mlflow.set_experiment("my-first-experiment-mlflow")
+```
+
+## Train the model
+
+
+```sh
+# Install the the requirement
+
+python3 -m pip install -r requirements.txt
+
+# Run train model py
+
+python3 train.py
+
+```
+
+
+
