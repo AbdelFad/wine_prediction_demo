@@ -16,15 +16,23 @@ fixed_acidity,volatile_acidity,citric_acid,residual_sugar,chlorides,quality
 7.9,0.75,0.04,2.5,0.086,6
 
 ======
+
+```sh
 git init
+
+```
 
 ## initialize dvc
 
+```sh
 dvc init
+```
 
 ## creat data reference file with dvc that will be store in github repo
 
+```sh
 dvc add data/wine_sample.csv
+```
 
 ## Create a S3 bucket in AWS cloud
 
@@ -32,18 +40,21 @@ bucket_name: mlops-xxx
 
 ## Add th data in the bucket use dvc
 
+```sh
 dvc remote add -d wineremote s3://xxx
-
-
+```
 
 ## config aws to push the data in s3 bucket
 
+```sh
 aws configure
+```
 
 ## push the data
 
+```sh
 dvc push 
-
+```
 
 # Experiment Tracking
 
