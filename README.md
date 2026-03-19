@@ -45,3 +45,16 @@ aws configure
 dvc push 
 
 
+# Experiment Tracking
+
+- It is a process of recording evrything that data scientists do as part of the training process.
+
+- Usually, they do multiple experiments because they don't reach the required efficiency in the very first experiment.
+
+# MLflow
+
+- use for experiment tracking
+- version controlle
+- deploy
+
+
